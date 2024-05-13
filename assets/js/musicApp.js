@@ -1,8 +1,5 @@
-// Designed by: Mauricio Bucardo
-// Original image: https://dribbble.com/shots/6957353-Music-Player-Widget
 "use strict";
-// add elemnts
-const bgBody = ["#e5e7e9", "#ff4545", "#f8ded3", "#ffc382", "#f5eda6", "#ffcbdc", "#dcf3f3"];
+const bgBody = ["#393939", "#8c5920", "#afa999", "#384d8c", "#2d241d", "#797e77", "#803a32","#abb0b3","#C1876B","#5860a1","#ad9372","#a67c90","#6a5b9e","#78caa6","#92837e","#8c8c8c","#6c2b23","#826e92","#272729","#596573","#5f6a60","#7e4a9c","#6a7a4a","#21201c","#444a40","#616161","#012d2e","#545253","#ffcfcf","#4f665e","#444b44",];
 const body = document.body;
 const player = document.querySelector(".player");
 const playerHeader = player.querySelector(".player__header");
@@ -29,7 +26,6 @@ const playIcon = playButton.querySelector("img[alt = 'play-icon']");
 const progres = player.querySelector(".progres");
 const progresFilled = progres.querySelector(".progres__filled");
 let isMove = false;
-// creat functions
 function openPlayer() {
     playerHeader.classList.add("open-header");
     playerControls.classList.add("move");
@@ -126,7 +122,6 @@ function progresUpdate() {
     }
 }
 function scurb(e) {
-    // If we use e.offsetX, we have trouble setting the song time, when the mousemove is running
     const currentTime = ((e.clientX - progres.getBoundingClientRect().left) / progres.offsetWidth) * song.duration;
     song.currentTime = currentTime;
 }
@@ -139,7 +134,6 @@ function durationSongs() {
     this.closest(".player__song").querySelector(".player__song-time").append(playerSongTime);
 }
 changeSliderContext();
-// add events
 sliderContext.addEventListener("click", openPlayer);
 sliderContext.addEventListener("animationend", () => sliderContext.style.animationName = '');
 playlistButton.addEventListener("click", closePlayer);
@@ -183,3 +177,5 @@ playerPlayList.forEach((item, index) => {
         }
     });
 });
+
+

@@ -287,7 +287,6 @@ img[alt="pause-icon"] {
 }
 
 .player__song {
-    /* gap: 0 .65em ; */
     display: flex;
     cursor: pointer;
     margin-bottom: .5em;
