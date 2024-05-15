@@ -268,9 +268,9 @@ img[alt="pause-icon"] {
 
 .progres__filled::before {
     right: 0;
-    width: .35em;
+    width: 10px;
     content: " ";
-    height: .35em;
+    height: 10px;
     border-radius: 50%;
     position: absolute;
     background-color: #5781bd;

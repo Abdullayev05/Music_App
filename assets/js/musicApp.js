@@ -177,5 +177,20 @@ playerPlayList.forEach((item, index) => {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const playButton = document.querySelector('.play');
+    const playIcon = document.querySelector('.play-icon');
+    const pauseIcon = document.querySelector('.pause-icon');
 
+    playButton.addEventListener('click', function() {
+        // Eğer play ikonu görünürse, ona tıklandığında pause ikonunu göster
+        if (playIcon.style.display !== 'none') {
+            playIcon.style.display = 'none';
+            pauseIcon.style.display = 'inline-block'; // veya 'block' kullanabilirsiniz
+        } else { // Eğer pause ikonu görünürse, ona tıklandığında play ikonunu göster
+            playIcon.style.display = 'inline-block'; // veya 'block' kullanabilirsiniz
+            pauseIcon.style.display = 'none';
+        }
+    });
+});
 
