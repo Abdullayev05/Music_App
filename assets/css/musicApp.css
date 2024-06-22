@@ -156,6 +156,12 @@ body {
     cursor: pointer;
 }
 
+.player__button i {
+    color: rgb(177, 172, 172);
+    padding-left: 17px;
+    font-size: 25px;
+}
+
 .playlist {
     transform: scale(0);
     transition: transform calc(var(--duration) / 2);
@@ -252,10 +258,6 @@ img[alt="pause-icon"] {
     transition: width var(--cubic-header);
 }
 
-.player__controls.move .progres {
-    width: 98%;
-}
-
 .progres__filled {
     width: 0%;
     height: 100%;
@@ -264,6 +266,10 @@ img[alt="pause-icon"] {
     align-items: center;
     border-radius: inherit;
     background-color: #78adfe;
+}
+
+.player__controls.move .progres {
+    width: 98%;
 }
 
 .progres__filled::before {

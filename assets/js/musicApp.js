@@ -1,5 +1,5 @@
 "use strict";
-const bgBody = ["#393939", "#8c5920", "#afa999", "#384d8c", "#2d241d", "#797e77", "#803a32","#abb0b3","#C1876B","#5860a1","#ad9372","#a67c90","#6a5b9e","#78caa6","#92837e","#8c8c8c","#6c2b23","#826e92","#272729","#596573","#5f6a60","#7e4a9c","#6a7a4a","#21201c","#444a40","#616161","#012d2e","#545253","#ffcfcf","#4f665e","#444b44",];
+const bgBody = ["#2b2b2b","#393939", "#8c5920", "#afa999", "#384d8c", "#2d241d", "#797e77", "#803a32","#abb0b3","#C1876B","#5860a1","#ad9372","#a67c90","#6a5b9e","#78caa6","#92837e","#8c8c8c","#6c2b23","#826e92","#272729","#596573","#5f6a60","#7e4a9c","#6a7a4a","#21201c","#444a40","#616161","#012d2e","#545253","#ffcfcf","#4f665e","#444b44",];
 const body = document.body;
 const player = document.querySelector(".player");
 const playerHeader = player.querySelector(".player__header");
@@ -183,12 +183,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const pauseIcon = document.querySelector('.pause-icon');
 
     playButton.addEventListener('click', function() {
-        // Eğer play ikonu görünürse, ona tıklandığında pause ikonunu göster
         if (playIcon.style.display !== 'none') {
             playIcon.style.display = 'none';
-            pauseIcon.style.display = 'inline-block'; // veya 'block' kullanabilirsiniz
-        } else { // Eğer pause ikonu görünürse, ona tıklandığında play ikonunu göster
-            playIcon.style.display = 'inline-block'; // veya 'block' kullanabilirsiniz
+            pauseIcon.style.display = 'inline-block'; 
+        } else { 
+            playIcon.style.display = 'inline-block'; 
             pauseIcon.style.display = 'none';
         }
     });
