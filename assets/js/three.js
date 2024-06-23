@@ -10,4 +10,3 @@ document.getElementById('playPauseButton').addEventListener('click', function() 
         pauseIcon.style.display = 'inline-block';
     }
 });
-
